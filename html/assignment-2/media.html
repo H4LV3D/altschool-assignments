@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me</title>
+  </head>
+  <body>
+    <header class="header">
+      <div>
+        <h1 id="main-title">Welcome to My Profile</h1>
+        <p class="info">
+          I'm <strong>Akinkunmi Toluwalope</strong>, ALT/SOE/024/6034. I'm a
+          student of Alt School Africa in the FrontEnd Engineering track and
+          here's my assignment on creating HTML files using media elements.
+        </p>
+      </div>
+    </header>
+    <br />
+
+    <main>
+      <div>
+        <!-- Responsive image -->
+        <h2>Profile Picture</h2>
+        <picture>
+          <!-- Large screen image (desktop) -->
+          <source
+            srcset="assets/Toluwalope_Akinkunmi.jpg"
+            media="(min-width: 1024px)"
+          />
+          <!-- Medium screen image (tablet) -->
+          <source
+            srcset="assets/Toluwalope_Akinkunmi.jpg"
+            media="(min-width: 768px)"
+          />
+          <!-- Default/small screen image (mobile) -->
+          <img
+            src="assets/Toluwalope_Akinkunmi.jpg"
+            alt="Profile Picture"
+            width="400"
+            height="300"
+          />
+        </picture>
+      </div>
+      <br />
+
+      <div>
+        <!-- Audio-->
+        <h2>Favorite Music</h2>
+        <p>
+          My favorite song at the moment is called JUBA by an endless ocean.
+        </p>
+        <audio controls src="./assets/song.mp3"></audio>
+      </div>
+      <br />
+
+      <div>
+        <!-- Video Element-->
+        <h2>Favorite Video</h2>
+        <p>Just a nice meme video that keeps me laughing</p>
+        <video
+          controls
+          src="./assets/video.mp4"
+          width="400"
+          aria-label="Favorite video"
+        ></video>
+      </div>
+      <br />
+
+      <nav>
+        <a href="table.html" aria-label="Go to AltSchool Courses page"
+          >Go to Courses Page</a
+        >
+      </nav>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Akinkunmi Toluwalope. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

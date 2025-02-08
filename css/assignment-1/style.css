@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #222;
+    font-family: Arial, sans-serif;
+}
+
+.card {
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 300px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    position: absolute;
+    top: -40px;
+    left: 25px;
+    background-color: #ff0080;
+    /* color: white; */
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px 80px;
+    border-radius: 4px;
+}
+
+.card-content {
+    margin-top: 40px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
